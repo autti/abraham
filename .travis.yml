@@ -4,29 +4,24 @@ language: python
 
 cache:
   pip: true
-  apt: true
 
 python:
   - "2.7"
   - "3.5"
-
-addons:
-  apt:
-    packages:
-      - flake8
-      - python-coverage
-
 cache:
   directories:
     - /home/travis/virtualenv/python2.7/lib/python2.7/site-packages
     - $HOME/.cache/pip
 
+before_script:
+  - pip install coveralls
+
 script:
-    - coverage run --source=abraham setup.py test
+  - coverage run --source=abraham setup.py test
 
 after_script:
+  - pip install flake8
   - flake8 abraham
 
 after_success:
-  - pip install coveralls
   - coveralls
