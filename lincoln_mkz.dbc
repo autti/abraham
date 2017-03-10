@@ -1,1 +1,76 @@
+VERSION ""
 
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: PDSC PDS_HMI PDS_Slave PDS_Master EPAS TPEC MAB BPEC
+VAL_TABLE_ aaaaaaaaaa 3 "EPAS" 2 "TPEC" 1 "BPEC" ;
+
+
+BO_ 131 Misc_Report: 5 EPAS
+ SG_ CNCL : 14|1@1+ (1,0) [0|0] ""  MAB
+ SG_ RES : 13|1@1+ (1,0) [0|0] ""  MAB
+ SG_ ON : 11|1@1+ (1,0) [0|0] ""  MAB
+ SG_ OFF : 12|1@1+ (1,0) [0|0] ""  MAB
+ SG_ SINC : 18|1@1+ (1,0) [0|0] ""  MAB
+ SG_ SDEC : 19|1@1+ (1,0) [0|0] ""  MAB
+ SG_ ONOFF : 16|1@1+ (1,0) [0|0] ""  MAB
+ SG_ LKAEN : 22|1@1+ (1,0) [0|0] ""  MAB
+ SG_ HIBEAM : 2|2@1+ (1,0) [0|0] ""  MAB
+ SG_ GINC : 20|1@1+ (1,0) [0|0] ""  MAB
+ SG_ GDEC : 21|1@1+ (1,0) [0|0] ""  MAB
+
+
+CM_ SG_ 131 CNCL "Button Cruise Control CANCEL";
+CM_ SG_ 131 RES "Button Cruise Control RESUME";
+CM_ SG_ 131 ON "Button Cruise Control ON";
+CM_ SG_ 131 OFF "Button Cruise Control OFF";
+CM_ SG_ 131 SINC "Button ACC SET+";
+CM_ SG_ 131 SDEC "Button ACC SET-";
+CM_ SG_ 131 ONOFF "Button ACC On/Off Toggle";
+CM_ SG_ 131 LKAEN "Button LKA On/Off Toggle";
+CM_ SG_ 131 HIBEAM "High Beam Headlights";
+CM_ SG_ 131 GINC "Button ACC GAP+";
+CM_ SG_ 131 GDEC "Button ACC GAP-";
+
+VAL_ 131 CNCL 1 "Pressed" 0 "Not Pressed" ;
+VAL_ 131 RES 1 "Pressed" 0 "Not Pressed" ;
+VAL_ 131 ON 1 "Pressed" 0 "Not Pressed" ;
+VAL_ 131 OFF 1 "Pressed" 0 "Not Pressed" ;
+VAL_ 131 SINC 1 "Pressed" 0 "Not Pressed" ;
+VAL_ 131 SDEC 1 "Pressed" 0 "Not Pressed" ;
+VAL_ 131 ONOFF 1 "Pressed" 0 "Not Pressed" ;
+VAL_ 131 LKAEN 1 "Pressed" 0 "Not Pressed" ;
+VAL_ 131 HIBEAM 2 "HIGH" 1 "FLASH_TO_PASS" 0 "NULL" ;
+VAL_ 131 GINC 1 "Pressed" 0 "Not Pressed" ;
+VAL_ 131 GDEC 1 "Pressed" 0 "Not Pressed" ;
