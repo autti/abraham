@@ -1,5 +1,6 @@
 # abraham
 [![Build Status](https://travis-ci.org/ingenieroariel/abraham.svg?branch=master)](https://travis-ci.org/ingenieroariel/abraham)
+[![Coverage Status](https://coveralls.io/repos/github/ingenieroariel/abraham/badge.svg?branch=master)](https://coveralls.io/github/ingenieroariel/abraham?branch=master)
 
 DBC files for Lincoln MKZ and Ford Fusion
 
