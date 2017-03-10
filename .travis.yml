@@ -13,16 +13,13 @@ python:
 addons:
   apt:
     packages:
-      - python-flake8
+      - flake8
       - python-coverage
 
 cache:
   directories:
     - /home/travis/virtualenv/python2.7/lib/python2.7/site-packages
     - $HOME/.cache/pip
-
-before_install:
-    - pip install coveralls
 
 script:
     - coverage run --source=abraham setup.py test
@@ -31,4 +28,5 @@ after_script:
   - flake8 abraham
 
 after_success:
+  - pip install coveralls
   - coveralls
