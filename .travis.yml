@@ -8,7 +8,6 @@ python:
 
 cache:
   directories:
-    - /home/travis/virtualenv/python2.7/lib/python2.7/site-packages
     - $HOME/.cache/pip
 
 before_install:
