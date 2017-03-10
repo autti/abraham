@@ -1,0 +1,13 @@
+Created using:
+candump can0,83:FFFFFFFF -l 
+
+Car starts in off mode
+then ON/off is pressed
+then CNCL is pressed
+then GAP+ is pressed
+then RES + is pressed
+then GAP- is pressed
+then RES- is pressed
+then LKAS is pressed
+then HIBEAM is pressed
+then car goes back off
