@@ -2,25 +2,22 @@ sudo: false
 
 language: python
 
-cache:
-  pip: true
-
 python:
   - "2.7"
   - "3.5"
+
 cache:
   directories:
     - /home/travis/virtualenv/python2.7/lib/python2.7/site-packages
     - $HOME/.cache/pip
 
-before_script:
-  - pip install coveralls
+before_install:
+  - pip install coveralls flake8 pytest
 
 script:
   - coverage run --source=abraham setup.py test
 
 after_script:
-  - pip install flake8
   - flake8 abraham
 
 after_success:
