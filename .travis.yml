@@ -8,9 +8,12 @@ python:
   - "2.7"
   - "3.5"
 
-install:
-  - pip install coveralls pytest flake8
-  - python setup.py -q install
+cache:
+  directories:
+    - /home/travis/virtualenv/python2.7/lib/python2.7/site-packages
+
+before_install:
+    - pip install coveralls
 
 script:
     - coverage run --source=abraham setup.py test
