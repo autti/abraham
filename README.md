@@ -5,6 +5,14 @@ This is a crowdsourced repository to decode Ford Fusion's and Lincoln MKZ can bu
 
 Issues will have the following format <model acronym><year>x<can id>. For example, for a ford fusion 2017 and id 0x320: `FF2017x320`, we will share links to data dumps that contain that code and use the ticket description to explain it fully. Once it is explained and added to the `.dbc` file we can close the ticket.
 
+# Adding data dumps.
+
+The data dumps should be created with `cansniffer` using the following command:
+`candump can0 -t z -a -1`.
+
+If you are creating a data dump for a particular command, you have to put it in that command's folder and create a txt file that explain what was going on. Data dumps should end with the `.candump` extension and explanations with the `.txt` extension.
+
+
 # How do I help?
 
  - Read this before you start: http://www.ioactive.com/pdfs/IOActive_Adventures_in_Automotive_Networks_and_Control_Units.pdf
