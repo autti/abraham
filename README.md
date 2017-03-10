@@ -1,4 +1,6 @@
 # abraham
+[![Build Status](https://travis-ci.org/ingenieroariel/abraham.svg?branch=master)](https://travis-ci.org/ingenieroariel/abraham)
+
 DBC files for Lincoln MKZ and Ford Fusion
 
 This is a crowdsourced repository to decode Ford Fusion's and Lincoln MKZ can bus, we will share data dumps for the different models here and creae issues for each of the id codes.
