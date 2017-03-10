@@ -1,0 +1,22 @@
+language: python
+
+cache: pip
+sudo: required
+dist: xenial
+
+python:
+  - "2.7"
+  - "3.5"
+
+install:
+  - pip install coveralls pytest flake8
+  - python setup.py -q install
+
+script:
+    - coverage run --source=abraham setup.py test
+
+after_script:
+  - flake8 abraham
+
+after_success:
+  - coveralls
