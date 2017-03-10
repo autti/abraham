@@ -1,16 +1,25 @@
+sudo: false
+
 language: python
 
-cache: pip
-sudo: required
-dist: xenial
+cache:
+  pip: true
+  apt: true
 
 python:
   - "2.7"
   - "3.5"
 
+addons:
+  apt:
+    packages:
+      - python-flake8
+      - python-coverage
+
 cache:
   directories:
     - /home/travis/virtualenv/python2.7/lib/python2.7/site-packages
+    - $HOME/.cache/pip
 
 before_install:
     - pip install coveralls
