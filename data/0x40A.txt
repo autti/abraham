@@ -1,0 +1,4 @@
+Created using:
+candump -t d -a -n 9 -l can0,40A:7FF 
+
+ASCII characters match VIN
