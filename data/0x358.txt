@@ -1,0 +1,1 @@
+This message runs exclusively on Medium Speed (MS) CAN bus.  Sending CAN message 358#001C will increase temperature by 1 deg F.  Sending CAN message 358#0020 will decrease temperature by 1 deg F.
